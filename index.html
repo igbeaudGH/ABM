@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMB — Desarrollamos el Futuro Digital de tu Empresa</title>
+  <meta name="description"
+    content="Arquitectos de software de alto rendimiento para proyectos que exigen la máxima precisión y escalabilidad. Desarrollo web, apps móviles y consultoría tech." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Custom cursor -->
+  <div id="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Scroll progress bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Volver arriba">
+    <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+      <path d="M10 16V4M4 10l6-6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </button>
+
+  <!-- ╔══════════════════ NAVBAR ══════════════════╗ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo" id="logo-link">
+        <span class="logo-text">AMB</span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#especialidades" id="nav-especialidades">Especialidades</a>
+        <a href="#valores" id="nav-valores">Valores</a>
+        <a href="#contacto" id="nav-contacto">Contacto</a>
+      </nav>
+      <a href="#contacto" class="btn btn-primary" id="nav-cta">Empieza Ahora</a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ╔══════════════════ HERO ══════════════════╗ -->
+  <section class="hero" id="hero">
+    <!-- Animated grid background -->
+    <div class="hero-grid" aria-hidden="true"></div>
+    <!-- Glowing orbs -->
+    <div class="hero-orb" aria-hidden="true"></div>
+    <div class="hero-orb-2" aria-hidden="true"></div>
+    <!-- Floating particles -->
+    <div class="particles" id="particles" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Software de Alto Rendimiento
+      </div>
+      <h1 class="hero-title">
+        Desarrollamos el<br />
+        <em class="hero-title-accent">Futuro Digital</em><br />
+        de tu Empresa
+      </h1>
+      <p class="hero-subtitle">
+        Arquitectos de software de alto rendimiento para proyectos<br class="br-desktop" />
+        que exigen la máxima precisión y escalabilidad.
+      </p>
+      <div class="hero-actions">
+        <a href="#contacto" class="btn btn-primary" id="hero-cta-main">Empieza Ahora</a>
+        <a href="#especialidades" class="btn btn-ghost" id="hero-cta-see">Ver Especialidades</a>
+      </div>
+      <div class="hero-metrics">
+        <div class="metric">
+          <span class="metric-number" data-target="50" data-prefix="+">+50</span>
+          <span class="metric-label">Proyectos Entregados</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <span class="metric-number" data-target="100" data-suffix="%">100%</span>
+          <span class="metric-label">Satisfacción de Clientes</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <span class="metric-number" data-target="5" data-suffix="+">5+</span>
+          <span class="metric-label">Años de Experiencia</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative image area -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-visual-inner">
+        <div class="code-dots">
+          <span class="code-dot"></span>
+          <span class="code-dot"></span>
+          <span class="code-dot"></span>
+        </div>
+        <div class="code-block">
+          <div class="code-line"><span class="c-keyword">const</span> <span class="c-var">futuro</span> = <span
+              class="c-fn">buildWith</span>({</div>
+          <div class="code-line c-indent"><span class="c-prop">precision</span>: <span class="c-string">"máxima"</span>,
+          </div>
+          <div class="code-line c-indent"><span class="c-prop">escala</span>: <span class="c-string">Infinity</span>,
+          </div>
+          <div class="code-line c-indent"><span class="c-prop">calidad</span>: <span class="c-string">"obsesiva"</span>
+          </div>
+          <div class="code-line">});</div>
+          <div class="code-line">&nbsp;</div>
+          <div class="code-line"><span class="c-keyword">await</span> <span class="c-var">futuro</span>.<span
+              class="c-fn">deploy</span>();</div>
+          <div class="code-line c-comment">// ✓ Compilado exitosamente</div>
+          <div class="code-cursor"></div>
+        </div>
+        <div class="code-status">
+          <span class="code-status-dot"></span>
+          Sistema activo · AMB v2.0
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════ MARQUEE TECNOLOGÍAS ══════════════════╗ -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item"><span class="m-dot"></span>React</span>
+      <span class="marquee-item"><span class="m-dot"></span>Next.js</span>
+      <span class="marquee-item"><span class="m-dot"></span>Node.js</span>
+      <span class="marquee-item"><span class="m-dot"></span>React Native</span>
+      <span class="marquee-item"><span class="m-dot"></span>Flutter</span>
+      <span class="marquee-item"><span class="m-dot"></span>PostgreSQL</span>
+      <span class="marquee-item"><span class="m-dot"></span>TypeScript</span>
+      <span class="marquee-item"><span class="m-dot"></span>AWS</span>
+      <span class="marquee-item"><span class="m-dot"></span>Docker</span>
+      <span class="marquee-item"><span class="m-dot"></span>GraphQL</span>
+      <span class="marquee-item"><span class="m-dot"></span>Python</span>
+      <span class="marquee-item"><span class="m-dot"></span>Figma</span>
+      <!-- Duplicate for seamless loop -->
+      <span class="marquee-item"><span class="m-dot"></span>React</span>
+      <span class="marquee-item"><span class="m-dot"></span>Next.js</span>
+      <span class="marquee-item"><span class="m-dot"></span>Node.js</span>
+      <span class="marquee-item"><span class="m-dot"></span>React Native</span>
+      <span class="marquee-item"><span class="m-dot"></span>Flutter</span>
+      <span class="marquee-item"><span class="m-dot"></span>PostgreSQL</span>
+      <span class="marquee-item"><span class="m-dot"></span>TypeScript</span>
+      <span class="marquee-item"><span class="m-dot"></span>AWS</span>
+      <span class="marquee-item"><span class="m-dot"></span>Docker</span>
+      <span class="marquee-item"><span class="m-dot"></span>GraphQL</span>
+      <span class="marquee-item"><span class="m-dot"></span>Python</span>
+      <span class="marquee-item"><span class="m-dot"></span>Figma</span>
+    </div>
+  </div>
+
+  <!-- ╔══════════════════ ESPECIALIDADES ══════════════════╗ -->
+  <section class="section specialties" id="especialidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Lo Que Hacemos</span>
+        <h2 class="section-title">Nuestras<br /><span class="accent">Especialidades</span></h2>
+        <p class="section-desc">Soluciones a medida para cada etapa de tu producto digital.</p>
+      </div>
+
+      <div class="cards-grid" id="cards-especialidades">
+
+        <!-- Card 1 -->
+        <article class="card" id="card-web">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="4" width="28" height="20" rx="3" stroke="#ffde59" stroke-width="1.8" />
+              <path d="M2 10h28" stroke="#ffde59" stroke-width="1.8" />
+              <circle cx="6.5" cy="7" r="1" fill="#ffde59" />
+              <circle cx="10.5" cy="7" r="1" fill="#ffde59" />
+              <path d="M10 17l4-4 4 4 4-6" stroke="#ffde59" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M8 28l2-4h12l2 4H8z" stroke="#ffde59" stroke-width="1.8" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3 class="card-title">Desarrollo Web</h3>
+          <p class="card-desc">Creamos sistemas robustos y escalables. Desde arquitecturas complejas hasta interfaces
+            únicas, construimos con las últimas tecnologías.</p>
+          <ul class="card-tags">
+            <li>React / Next.js</li>
+            <li>Node.js</li>
+            <li>PostgreSQL</li>
+          </ul>
+          <div class="card-arrow">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10h12M12 6l4 4-4 4" stroke="#ffde59" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card" id="card-apps">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="9" y="2" width="14" height="28" rx="3" stroke="#ffde59" stroke-width="1.8" />
+              <path d="M9 8h14M9 24h14" stroke="#ffde59" stroke-width="1.8" />
+              <circle cx="16" cy="27" r="1" fill="#ffde59" />
+              <rect x="13" y="4.5" width="6" height="1.5" rx=".75" fill="#ffde59" />
+            </svg>
+          </div>
+          <h3 class="card-title">Apps Móviles</h3>
+          <p class="card-desc">Experiencias nativas e híbridas que los usuarios instalan y no desinstalan. Diseño y
+            funcionalidad en perfecta armonía.</p>
+          <ul class="card-tags">
+            <li>React Native</li>
+            <li>Flutter</li>
+            <li>iOS &amp; Android</li>
+          </ul>
+          <div class="card-arrow">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10h12M12 6l4 4-4 4" stroke="#ffde59" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card" id="card-consultoria">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 26V8a2 2 0 012-2h6v20H4z" stroke="#ffde59" stroke-width="1.8" stroke-linejoin="round" />
+              <path d="M12 26V12h14v14H12z" stroke="#ffde59" stroke-width="1.8" stroke-linejoin="round" />
+              <path d="M15 18h5M15 15h8M15 21h3" stroke="#ffde59" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="card-title">Consultoría Tech</h3>
+          <p class="card-desc">Optimización de procesos y arquitectura de software. Identificamos cuellos de botella y
+            trazamos el mapa hacia la excelencia técnica.</p>
+          <ul class="card-tags">
+            <li>Auditoría</li>
+            <li>Arquitectura</li>
+            <li>Roadmap</li>
+          </ul>
+          <div class="card-arrow">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10h12M12 6l4 4-4 4" stroke="#ffde59" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════ VALORES ══════════════════╗ -->
+  <section class="section values" id="valores">
+    <div class="container">
+      <div class="values-inner">
+        <div class="values-left">
+          <span class="section-tag">Nuestra Filosofía</span>
+          <h2 class="section-title">El Rigor como<br /><span class="accent">Estándar de Oro</span></h2>
+          <p class="section-desc">No entregamos código. Entregamos certeza.</p>
+          <a href="#contacto" class="btn btn-primary" id="valores-cta">Trabajemos Juntos</a>
+        </div>
+        <div class="values-right" id="values-list">
+          <div class="value-item" id="valor-calidad">
+            <div class="value-number">01</div>
+            <div class="value-content">
+              <h3 class="value-title">Calidad Obsesiva</h3>
+              <p class="value-desc">Cada línea de código es revisada bajo los estándares más exigentes. No existe
+                "suficientemente bueno" en nuestro vocabulario.</p>
+            </div>
+          </div>
+          <div class="value-item" id="valor-velocidad">
+            <div class="value-number">02</div>
+            <div class="value-content">
+              <h3 class="value-title">Velocidad Técnica</h3>
+              <p class="value-desc">Rendimiento optimizado sin compromisos. Tu producto corre más rápido y escala sin
+                fricciones desde el primer día.</p>
+            </div>
+          </div>
+          <div class="value-item" id="valor-comunicacion">
+            <div class="value-number">03</div>
+            <div class="value-content">
+              <h3 class="value-title">Comunicación Total</h3>
+              <p class="value-desc">Transparencia absoluta en cada fase del proyecto. Sabrás exactamente qué ocurre,
+                cuándo y por qué.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════ CTA SECTION ══════════════════╗ -->
+  <section class="section cta-section" id="contacto">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-badge">Hablemos</div>
+        <h2 class="cta-title">¿Listo Para Pasar<br />al Siguiente Nivel?</h2>
+        <p class="cta-desc">Cuéntanos tu proyecto y en menos de 24h tendrás una propuesta técnica personalizada.</p>
+        <form class="cta-form" id="cta-form" novalidate>
+          <div class="form-row">
+            <input type="text" id="form-nombre" name="nombre" placeholder="Tu nombre" class="form-input" required />
+            <input type="email" id="form-email" name="email" placeholder="tu@empresa.com" class="form-input" required />
+          </div>
+          <textarea id="form-mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto..." class="form-textarea"
+            rows="4" required></textarea>
+          <button type="submit" class="btn btn-dark btn-lg" id="form-submit">
+            Agendar una Consulta
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════ FOOTER ══════════════════╗ -->
+  <footer class="footer" id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo" id="footer-logo">
+          <span class="logo-text">AMB</span>
+        </a>
+        <p class="footer-tagline">Arquitectos del Futuro Digital.</p>
+        <div class="footer-socials">
+          <!-- Twitter / X -->
+          <a href="#" class="social-link" id="social-twitter" aria-label="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="#" class="social-link" id="social-instagram" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="5" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="#" class="social-link" id="social-linkedin" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <div class="footer-col">
+          <h4 class="footer-col-title">Servicios</h4>
+          <a href="#especialidades">Desarrollo Web</a>
+          <a href="#especialidades">Apps Móviles</a>
+          <a href="#especialidades">Consultoría Tech</a>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Empresa</h4>
+          <a href="#valores">Valores</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Legal</h4>
+          <a href="#" id="footer-privacy">Privacidad</a>
+          <a href="#" id="footer-cookies">Cookies</a>
+          <a href="#" id="footer-terms">Términos</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 AMB. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
