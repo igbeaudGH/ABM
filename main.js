@@ -175,39 +175,28 @@
   }
 
   // ── Form submission ────────────────────────────────
+  // El formulario está configurado con Netlify
+  // Netlify maneja el submit automáticamente
+  // Este código solo añade validación visual en caso de campos vacíos
+
   const form      = document.getElementById('cta-form');
   const submitBtn = document.getElementById('form-submit');
 
   form?.addEventListener('submit', (e) => {
-    e.preventDefault();
-
+    // Dejar que Netlify maneje el submit
+    // Solo validamos visualmente para dar feedback inmediato
     const nombre  = document.getElementById('form-nombre').value.trim();
     const email   = document.getElementById('form-email').value.trim();
     const mensaje = document.getElementById('form-mensaje').value.trim();
 
     if (!nombre || !email || !mensaje) {
+      e.preventDefault();
       shakeEl(form);
       return;
     }
 
-    submitBtn.textContent = 'Enviando...';
-    submitBtn.disabled    = true;
-
-    setTimeout(() => {
-      submitBtn.innerHTML = `
-        <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-          <path d="M5 10l4 4 6-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        Mensaje Enviado
-      `;
-      form.reset();
-
-      setTimeout(() => {
-        submitBtn.innerHTML = `Agendar una Consulta
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-        submitBtn.disabled  = false;
-      }, 4000);
-    }, 1500);
+    // Si todo está bien, dejar que Netlify procese el form
+    // El usuario verá el mensaje de éxito de Netlify
   });
 
   function shakeEl(el) {

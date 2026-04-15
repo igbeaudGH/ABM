@@ -694,14 +694,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .card {
-  background: var(--surface2);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 36px 32px;
+  background: var(--surface);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 32px;
   position: relative;
   overflow: hidden;
-  transition: border-color var(--transition), transform 0.4s cubic-bezier(.34,1.56,.64,1), box-shadow var(--transition);
-  cursor: default;
+  transition: background 0.5s ease, border-color 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
 }
 .card::before {
   content: '';
@@ -709,7 +709,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   inset: 0;
   background: linear-gradient(135deg, rgba(255,222,89,0.05), transparent 60%);
   opacity: 0;
-  transition: opacity var(--transition);
+  transition: opacity 0.5s ease;
 }
 /* Top glow line on hover */
 .card::after {
@@ -719,7 +719,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(255,222,89,0.6), transparent);
   opacity: 0;
-  transition: opacity 0.4s;
+  transition: opacity 0.5s ease;
 }
 .card:hover {
   background: var(--accent);
@@ -731,14 +731,21 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .card:hover::after  { opacity: 1; }
 
 /* Text goes dark on hover */
-.card:hover .card-title { color: #111; }
-.card:hover .card-desc  { color: rgba(0,0,0,0.62); }
+.card:hover .card-title { 
+  color: #111;
+  transition: color 0.4s ease;
+}
+.card:hover .card-desc  { 
+  color: rgba(0,0,0,0.62);
+  transition: color 0.4s ease;
+}
 
 /* Icon goes dark on hover via filter */
 .card:hover .card-icon {
-  background: rgba(0,0,0,0.1);
+  background: rgba(255,222,89,0.14);
   border-color: rgba(0,0,0,0.12);
   filter: brightness(0);
+  transition: background 0.5s ease, border-color 0.5s ease, filter 0.5s ease;
 }
 
 /* Tags go dark on hover */
@@ -746,6 +753,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   background: rgba(0,0,0,0.1);
   border-color: rgba(0,0,0,0.12);
   color: rgba(0,0,0,0.65);
+  transition: background 0.5s ease, border-color 0.5s ease, color 0.5s ease;
 }
 
 .card--featured {
@@ -761,11 +769,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   align-items: center;
   justify-content: center;
   margin-bottom: 24px;
-  transition: background 0.3s, transform 0.35s cubic-bezier(.34,1.56,.64,1);
+  transition: background 0.5s ease, transform 0.5s cubic-bezier(.34,1.56,.64,1);
 }
 .card:hover .card-icon {
   background: rgba(255,222,89,0.14);
   transform: scale(1.1) rotate(-4deg);
+  transition: background 0.5s ease, transform 0.5s cubic-bezier(.34,1.56,.64,1);
 }
 .card--featured .card-icon {
   background: rgba(0,0,0,0.1);
@@ -826,13 +835,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.35s cubic-bezier(.34,1.56,.64,1);
+  transition: all 0.5s cubic-bezier(.34,1.56,.64,1);
 }
 .card:hover .card-arrow {
   background: rgba(0,0,0,0.15);
   transform: scale(1.15) rotate(-45deg);
 }
-.card:hover .card-arrow svg path { stroke: #111; }
+.card:hover .card-arrow svg path { 
+  stroke: #111;
+  transition: stroke 0.4s ease;
+}
 
 /* ═══════════════════════════════════════════════════
    VALUES
