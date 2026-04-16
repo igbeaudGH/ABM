@@ -290,7 +290,14 @@
         <div class="cta-badge">Hablemos</div>
         <h2 class="cta-title">¿Listo Para Pasar<br />al Siguiente Nivel?</h2>
         <p class="cta-desc">Cuéntanos tu proyecto y en menos de 24h tendrás una propuesta técnica personalizada.</p>
-        <form class="cta-form" id="cta-form" name="contacto" netlify>
+        <form class="cta-form" id="cta-form"
+          action="https://formsubmit.co/abmdesarrollo0@gmail.com"
+          method="POST">
+          <!-- FormSubmit config -->
+          <input type="hidden" name="_subject" value="🚀 Nueva consulta desde AMB" />
+          <input type="hidden" name="_next" value="https://abmdesarrollo.netlify.app/#contacto" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
           <div class="form-row">
             <input type="text" id="form-nombre" name="nombre" placeholder="Tu nombre" class="form-input" required />
             <input type="email" id="form-email" name="email" placeholder="tu@empresa.com" class="form-input" required />
